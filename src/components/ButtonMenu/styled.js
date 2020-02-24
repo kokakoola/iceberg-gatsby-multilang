@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import media from 'styled-media-query';
 
 export const ButtonHamburger = styled.button`
-  background: transparent;
+  background: var(--link-color);
   display: inline-block;
   width: 50px;
   height: 50px;
   border: none;
   position: absolute;
-  border-radius: 3px;
+  border-radius: 2px;
   top: var(--space-sm);
   left: var(--space-sm);
   ${media.greaterThan('medium')`

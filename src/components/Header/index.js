@@ -33,6 +33,9 @@ const Header = () => {
         <S.NavMenu>
           <Navigation isActive={toggleMenu} handleToggleMenu={handleToggleMenu} />
         </S.NavMenu>
+        <S.LogoLink to="/" title={home} aria-label={home}>
+          <Logo />
+        </S.LogoLink>
       </S.Container>
     </S.HeaderWrapper>
   );

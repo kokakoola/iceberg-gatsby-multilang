@@ -17,6 +17,7 @@ const Page = props => {
       />
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
+        PAGE
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.Content>
     </>

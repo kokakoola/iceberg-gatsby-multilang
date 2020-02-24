@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import PostItem from '../components/PostItem';
 import TitlePage from '../components/TitlePage';
+import Form from '../components/Form';
 import LocalizedLink from '../components/LocalizedLink';
 import useTranslations from '../components/useTranslations';
 
@@ -32,7 +33,8 @@ const Index = ({ data: { allMarkdownRemark } }) => {
       </h2>
 
       <br />
-
+INDEX
+<Form></Form>
       <S.ListWrapper>
         {postList.map(
           ({
