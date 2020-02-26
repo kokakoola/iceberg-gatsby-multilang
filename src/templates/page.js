@@ -7,21 +7,22 @@ import * as S from '../components/Content/styled';
 
 const Page = props => {
   const post = props.data.markdownRemark;
+  const { text } = props;
 
   return (
-    <>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
-        image={post.frontmatter.image}
-      />
-      <TitlePage text={post.frontmatter.title} />
-      <S.Content>
-        PAGE
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-      </S.Content>
-    </>
-  );
+      <>
+          <SEO
+              title={post.frontmatter.title}
+              description={post.frontmatter.description}
+              image={post.frontmatter.image}
+          />
+          <TitlePage text={post.frontmatter.title} />
+          <S.Content>
+              PAGE
+              <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+          </S.Content>
+      </>
+  )
 };
 
 export const query = graphql`

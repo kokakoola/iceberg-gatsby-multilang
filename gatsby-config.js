@@ -73,7 +73,6 @@ module.exports = {
                         },
                     },
                     `gatsby-remark-lazy-load`,
-                    `gatsby-remark-prismjs`, // It needs to be the last one
                 ],
             },
         },
