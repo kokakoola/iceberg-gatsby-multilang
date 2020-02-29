@@ -13,6 +13,11 @@
     "prev": "Anterior",
     "of": "de",
 
+    "name": "Your name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+
     "button": "Botão",
 
     "aboutProject": "Iceberg Gatsby é um PWA, salve o site em sua homescreen para vê-lo offline.",

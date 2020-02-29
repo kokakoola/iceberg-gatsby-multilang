@@ -1,5 +1,4 @@
 import React from 'react';
-import * as S from './styled';
 
 const TitlePage = props => {
   const { text } = props;
@@ -8,7 +7,7 @@ const TitlePage = props => {
       <>
           <section className="bg-white py-8" role="main">
               <div className="container mx-auto flex items-center flex-wrap pt-4 pb-12">
-                  <S.TitleElement>{text}</S.TitleElement>
+                  <h1 className="text-black text-2xl my-4">{text}</h1>
               </div>
           </section>
       </>

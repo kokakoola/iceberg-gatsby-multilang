@@ -1,22 +1,26 @@
 {
-  "home": "Home",
-  "hero": "hero ingliskeeles",
+    "home": "Home",
+    "hero": "hero ingliskeeles",
 
-  "hello": "Gatsby multi-language starter",
-  "subline": "Some other text",
-  "latestPosts": "Latest posts",
-  "category": "Category",
-  "allPosts": "All Posts",
-  "toRead": "to read",
+    "hello": "Gatsby multi-language starter",
+    "subline": "Some other text",
+    "latestPosts": "Latest posts",
+    "category": "Category",
+    "allPosts": "All Posts",
+    "toRead": "to read",
 
-  "next": "Next",
-  "prev": "Prev",
-  "of": "of",
+    "name": "Sinu nimi",
+    "email": "E-post",
+    "message": "Teade",
+    "send": "Saada",
+    "next": "Next",
+    "prev": "Prev",
+    "of": "of",
 
-  "button": "Button",
+    "button": "Button",
 
-  "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
-  "seeMorePWA": "See more PWA here",
-  "maintainedBy": "Maintained by",
-  "contributeMessage": "You can always contribute with the project on"
+    "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
+    "seeMorePWA": "See more PWA here",
+    "maintainedBy": "Maintained by",
+    "contributeMessage": "You can always contribute with the project on"
 }

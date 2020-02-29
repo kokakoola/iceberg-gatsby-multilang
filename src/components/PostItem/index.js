@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import useTranslations from '../useTranslations';
-
-import * as S from './styled';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
 const PostItem = ({
   slug,
@@ -49,34 +49,33 @@ const PostItem = ({
     : false;
 
   return (
-    <S.PostItemLink to={slug}>
-      <S.PostItemWrapper>
-        {postImg && (
-          <S.PostItemImg
-            fluid={postImg.node.childImageSharp.fluid}
-            alt={title}
-          />
-        )}
-        {!postImg && (
-          <S.PostItemImg
-            fluid={postImgCover.node.childImageSharp.fluid}
-            alt={title}
-          />
-        )}
-
-        <S.PostItemInfo>
-          <S.PostItemTag background={background}>
-            {category}
-          </S.PostItemTag>
-          <S.PostItemDate>
-            {date} • {timeToRead} min {toRead}
-          </S.PostItemDate>
-          <S.PostItemTitle>{title}</S.PostItemTitle>
-          <S.PostItemDescription>{description}</S.PostItemDescription>
-        </S.PostItemInfo>
-      </S.PostItemWrapper>
-    </S.PostItemLink>
-  );
+      <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <Link to={slug}>
+              {postImg && (
+                  <Img
+                      className="hover:grow hover:shadow-lg"
+                      fluid={postImg.node.childImageSharp.fluid}
+                      alt={title}
+                  />
+              )}
+              {!postImg && (
+                  <Img
+                      className="hover:grow hover:shadow-lg"
+                      fluid={postImgCover.node.childImageSharp.fluid}
+                      alt={title}
+                  />
+              )}
+              <div className="pt-3 flex items-center justify-between">
+                  <h5>{title}</h5>
+                  <span>{category}</span>
+              </div>
+              <p className="pt-1 text-gray-900">
+                  {date} • {timeToRead} min {toRead}
+              </p>
+              <p className="pt-1 text-gray-900">{description}</p>
+          </Link>
+      </div>
+  )
 };
 
 PostItem.propTypes = {

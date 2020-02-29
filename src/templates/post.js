@@ -3,8 +3,6 @@ import { graphql } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
 
-import * as S from '../components/Content/styled';
-
 const Post = props => {
   const post = props.data.markdownRemark;
 
@@ -16,9 +14,9 @@ const Post = props => {
         image={post.frontmatter.image}
       />
       <TitlePage text={post.frontmatter.title} />
-      <S.Content>
+      <div>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-      </S.Content>
+      </div>
     </>
   );
 };

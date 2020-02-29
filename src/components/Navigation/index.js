@@ -1,8 +1,7 @@
 import React from 'react';
 import useMenu from '../useMenu';
 import useTranslations from '../useTranslations';
-
-import * as S from './styled';
+import { Link } from 'gatsby'
 
 const Navigation = ({ isActive, handleToggleMenu }) => {
   const menuItems = useMenu();
@@ -18,20 +17,16 @@ const Navigation = ({ isActive, handleToggleMenu }) => {
               }
           >
               {menuItems.map(menu => (
-                  <a
-                      href={menu.link}
+                  <Link
+                      to={menu.link}
                       aria-label={menu.name}
                       activeClassName="active"
                       className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
                       onClick={() => handleToggleMenu()}
                   >
                       {menu.name}
-                  </a>
+                  </Link>
               ))}
-
-              <S.NavigationButton to="" aria-label="Login">
-                  {button}
-              </S.NavigationButton>
           </div>
       </>
   )

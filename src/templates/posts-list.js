@@ -6,8 +6,6 @@ import SEO from '../components/seo';
 
 import Pagination from '../components/Pagination';
 
-import * as S from '../components/ListWrapper/styled';
-
 const Blog = props => {
   const postList = props.data.allMarkdownRemark.edges;
 
@@ -20,50 +18,49 @@ const Blog = props => {
   const nextPage = `/blog/page/${currentPage + 1}`;
 
   return (
-    <>
-      <SEO title="Blog" />
-      <TitlePage text="Blog" />
-POSTLIST
-      <S.ListWrapper>
-        {postList.map(
-          ({
-            node: {
-              frontmatter: {
-                background,
-                category,
-                date,
-                description,
-                title,
-                image,
-              },
-              timeToRead,
-              fields: { slug },
-            },
-          }) => (
-            <PostItem
-              slug={`/blog/${slug}`}
-              background={background}
-              category={category}
-              date={date}
-              timeToRead={timeToRead}
-              title={title}
-              description={description}
-              image={image}
-            />
-          ),
-        )}
-      </S.ListWrapper>
-
-      <Pagination
-        isFirst={isFirst}
-        isLast={isLast}
-        currentPage={currentPage}
-        numPages={numPages}
-        prevPage={prevPage}
-        nextPage={nextPage}
-      />
-    </>
-  );
+      <>
+          <SEO title="Blog" />
+          <TitlePage text="Blog" />
+          POSTLIST
+          <div className="w-full md:w-1/3 xl:w-1/2 p-6 flex flex-col">
+              {postList.map(
+                  ({
+                      node: {
+                          frontmatter: {
+                              background,
+                              category,
+                              date,
+                              description,
+                              title,
+                              image,
+                          },
+                          timeToRead,
+                          fields: { slug },
+                      },
+                  }) => (
+                      <PostItem
+                          slug={`/blog/${slug}`}
+                          background={background}
+                          category={category}
+                          date={date}
+                          timeToRead={timeToRead}
+                          title={title}
+                          description={description}
+                          image={image}
+                      />
+                  )
+              )}
+          </div>
+          <Pagination
+              isFirst={isFirst}
+              isLast={isLast}
+              currentPage={currentPage}
+              numPages={numPages}
+              prevPage={prevPage}
+              nextPage={nextPage}
+          />
+      </>
+  )
 };
 
 export const query = graphql`

@@ -48,6 +48,11 @@ const query = graphql`
             prev
             of
 
+            name
+            email
+            message
+            send
+
             button
 
             aboutProject
@@ -59,4 +64,4 @@ const query = graphql`
       }
     }
   }
-`;
+`

@@ -2,8 +2,6 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 
-import * as S from './styled';
-
 const LocaleContext = React.createContext();
 
 // Use the built-in Context API to make the "locale" available to every component in the tree
@@ -12,13 +10,13 @@ const LocaleContext = React.createContext();
 // the locale available everywhere!
 const Layout = ({ children, pageContext: { locale } }) => (
   <LocaleContext.Provider value={{ locale }}>
-    <S.Wrapper>
+    <div>
       <Header />
-      <S.SiteContent role="main">
-        <S.Container>{children}</S.Container>
-      </S.SiteContent>
+      <div role="main">
+        <div>{children}</div>
+      </div>
       <Footer />
-    </S.Wrapper>
+    </div>
   </LocaleContext.Provider>
 );
 

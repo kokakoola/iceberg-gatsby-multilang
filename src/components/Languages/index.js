@@ -1,21 +1,20 @@
 import React from 'react';
-
-import * as S from './styled';
+import { Link } from 'gatsby'
 
 const Languages = () => {
   return (
-    <S.LanguageWrapper>
-      <S.LanguageItem>
-        <S.LanguageLink to="/" hrefLang="en">
+    <div>
+      <div>
+        <Link to="/" hrefLang="en">
           en-US
-        </S.LanguageLink>
-      </S.LanguageItem>
-      <S.LanguageItem>
-        <S.LanguageLink to="/pt" hrefLang="pt">
+        </Link>
+      </div>
+      <div>
+        <Link to="/pt" hrefLang="pt">
           pt-BR
-        </S.LanguageLink>
-      </S.LanguageItem>
-    </S.LanguageWrapper>
+        </Link>
+      </div>
+    </div>
   );
 };
 
