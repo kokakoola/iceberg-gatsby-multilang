@@ -17,12 +17,12 @@ const Footer = () => {
 
   return (
       <footer
-          className="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center border-t border-gray-400"
+          className="w-full mx-auto bg-gray-200 flex pt-12 md:pt-0 md:items-center border-t border-gray-400"
           role="main"
       >
           <div className="container mx-auto">
-              <div className="flex flex-col w-full justify-center items-start  px-6 tracking-wide">
-                  <div>
+              <div className="flex">
+                  <div className="w-1/2">
                       <SocialLinks />
                       <p>
                           {aboutProject}{' '}
@@ -52,7 +52,7 @@ const Footer = () => {
                           .
                       </p>
                   </div>
-                  <div>
+                  <div className="w-1/2">
                       <Form name={name} email={email}></Form>
                   </div>
               </div>

@@ -15,10 +15,13 @@ const Page = props => {
               image={post.frontmatter.image}
           />
           <TitlePage text={post.frontmatter.title} />
-          <div>
+          <section className="bg-white py-8">
               PAGE
-              <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-          </div>
+              <div
+                  className="container py-8 px-6 mx-auto"
+                  dangerouslySetInnerHTML={{ __html: post.html }}
+              ></div>
+          </section>
       </>
   )
 };

@@ -6,7 +6,7 @@ const TitlePage = props => {
   return (
       <>
           <section className="bg-white py-8" role="main">
-              <div className="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+              <div className="container mx-auto pt-4 pb-12">
                   <h1 className="text-black text-2xl my-4">{text}</h1>
               </div>
           </section>

@@ -7,18 +7,21 @@ const Post = props => {
   const post = props.data.markdownRemark;
 
   return (
-    <>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
-        image={post.frontmatter.image}
-      />
-      <TitlePage text={post.frontmatter.title} />
-      <div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-      </div>
-    </>
-  );
+      <>
+          <SEO
+              title={post.frontmatter.title}
+              description={post.frontmatter.description}
+              image={post.frontmatter.image}
+          />
+          <TitlePage text={post.frontmatter.title} />
+          <section className="bg-white py-8">
+              <div
+                  className="container py-8 px-6 mx-auto"
+                  dangerouslySetInnerHTML={{ __html: post.html }}
+              ></div>
+          </section>
+      </>
+  )
 };
 
 export const query = graphql`
