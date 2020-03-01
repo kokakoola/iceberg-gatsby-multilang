@@ -5,7 +5,7 @@ const Hero = props => {
 
                           return (
                               <section
-                                  className="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right"
+                                  className="hero"
                                   style={{
                                       maxWidth: '1600px',
                                       height: '32rem',

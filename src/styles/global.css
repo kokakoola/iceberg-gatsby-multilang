@@ -1,5 +1,53 @@
-@tailwind base;
+@import "tailwindcss/base";
 
-@tailwind components;
+@import "tailwindcss/components";
 
-@tailwind utilities;
+@import "tailwindcss/utilities";
+
+.hero {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.hero:before {
+  -webkit-transition: background-color 2.5s ease-in-out;
+  transition: background-color 2.5s ease-in-out;
+  -webkit-transition-delay: .75s;
+  transition-delay: .75s;
+  background-image: -webkit-gradient(linear,left bottom,left top,from(#13151980),to(#13151980)),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIABAMAAAAGVsnJAAAAFVBMV…9f92n//nWf9u9f92n//nWf9u9f92n//nWf9u9f9/z/1/4AuzlkoYASx08AAAAASUVORK5CYII=);
+  background-image: linear-gradient(0deg,#13151980,#13151980),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIABAMAAAAGVsnJAAAAFVBMV…9f92n//nWf9u9f92n//nWf9u9f92n//nWf9u9f9/z/1/4AuzlkoYASx08AAAAASUVORK5CYII=);
+  background-size: auto,256px 256px;
+  background-position: 50%,50%;
+  background-repeat: no-repeat,repeat;
+  z-index: 2;
+}
+
+.hero:after, .hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero:after {
+  -webkit-transform: scale(1.125);
+  transform: scale(1.125);
+  -webkit-transition: -webkit-transform .325s ease-in-out,-webkit-filter .325s ease-in-out;
+  transition: -webkit-transform .325s ease-in-out,-webkit-filter .325s ease-in-out;
+  transition: transform .325s ease-in-out,filter .325s ease-in-out;
+  transition: transform .325s ease-in-out,filter .325s ease-in-out,-webkit-transform .325s ease-in-out,-webkit-filter .325s ease-in-out;
+  background-position: 50%;
+  background-image: url("https://images.unsplash.com/photo-1529859593319-f90e81f2db3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}

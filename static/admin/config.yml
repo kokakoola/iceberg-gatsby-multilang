@@ -2,7 +2,7 @@ backend:
     name: git-gateway
     repo: kokakoola/iceberg-gatsby-multilang
     branch: master
-    site_domain: https://flamboyant-wing-9b7f8e.netlify.com/
+    site_domain: https://hansaassets.netlify.com/
 
 publish_mode: editorial_workflow
 media_folder: 'static/assets/img'
@@ -58,6 +58,8 @@ collections:
                     ],
             }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      editor:
+        preview: true
 
     #Posts (Portuguese)
     - name: 'posts-pt' # Used in routes, e.g., /admin/collections/blog

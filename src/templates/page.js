@@ -5,7 +5,6 @@ import SEO from '../components/seo';
 
 const Page = props => {
   const post = props.data.markdownRemark;
-  const { text } = props;
 
   return (
       <>
