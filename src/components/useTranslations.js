@@ -48,6 +48,7 @@ const query = graphql`
             prev
             of
 
+            formTitle
             name
             email
             message
@@ -55,10 +56,10 @@ const query = graphql`
 
             button
 
-            aboutProject
-            seeMorePWA
-            maintainedBy
-            contributeMessage
+            company
+            street
+            address
+            phone
           }
         }
       }

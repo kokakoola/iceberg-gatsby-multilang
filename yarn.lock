@@ -1030,9 +1030,9 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@hapi/address@2.x.x":
+"@hapi/street@2.x.x":
   version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
+  resolved "https://registry.yarnpkg.com/@hapi/street/-/street-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
   integrity sha512-O4QDrx+JoGKZc6aN64L04vqa7e41tIiLU+OvKdcYaEMP97UttL0f9GIi9/0A4WAMx0uBd6SidDIhktZhgOcN8Q==
 
 "@hapi/bourne@1.x.x":
@@ -1050,7 +1050,7 @@
   resolved "https://registry.yarnpkg.com/@hapi/joi/-/joi-15.1.1.tgz#c675b8a71296f02833f8d6d243b34c57b8ce19d7"
   integrity sha512-entf8ZMOK8sc+8YfeOlM8pCfg3b5+WZIKBfUaaJT8UsjAAPjartzxIYm3TIbjvA4u+u++KbcXD38k682nVHDAQ==
   dependencies:
-    "@hapi/address" "2.x.x"
+    "@hapi/street" "2.x.x"
     "@hapi/bourne" "1.x.x"
     "@hapi/hoek" "8.x.x"
     "@hapi/topo" "3.x.x"
@@ -1738,14 +1738,14 @@ acorn@^7.0.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
   integrity sha512-kL5CuoXA/dgxlBbVrflsflzQ3PAas7RYZB52NOm/6839iVYJgKMJ3cQJD+t2i5+qFa8h3MDpEOJiS64E8JLnSQ==
 
-address@1.0.3:
+street@1.0.3:
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
+  resolved "https://registry.yarnpkg.com/street/-/street-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
   integrity sha512-z55ocwKBRLryBs394Sm3ushTtBeg6VAeuku7utSoSnsJKvKcnXFIyC6vh27n3rXyxSgkJBBCAvyOn7gSUcTYjg==
 
-address@1.1.2, address@^1.0.1:
+street@1.1.2, street@^1.0.1:
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/address/-/address-1.1.2.tgz#bf1116c9c758c51b7a933d296b72c221ed9428b6"
+  resolved "https://registry.yarnpkg.com/street/-/street-1.1.2.tgz#bf1116c9c758c51b7a933d296b72c221ed9428b6"
   integrity sha512-aT6camzM4xEA54YVJYSqxz1kv4IHnQZRtThJJHhUMRExaU5spC7jX5ugSwTaTgJliIgs4VhZOk7htClvQ/LmRA==
 
 after@0.8.2:
@@ -4279,7 +4279,7 @@ detect-port-alt@1.1.3:
   resolved "https://registry.yarnpkg.com/detect-port-alt/-/detect-port-alt-1.1.3.tgz#a4d2f061d757a034ecf37c514260a98750f2b131"
   integrity sha1-pNLwYddXoDTs83xRQmCph1DysTE=
   dependencies:
-    address "^1.0.1"
+    street "^1.0.1"
     debug "^2.6.0"
 
 detect-port@^1.3.0:
@@ -4287,7 +4287,7 @@ detect-port@^1.3.0:
   resolved "https://registry.yarnpkg.com/detect-port/-/detect-port-1.3.0.tgz#d9c40e9accadd4df5cac6a782aefd014d573d1f1"
   integrity sha512-E+B1gzkl2gqxt1IhUzwjrxBKRqx1UzC3WLONHinn8S3T6lwV/agVCyitiFOsGJ/eYuEUBvD71MZHy3Pv1G9doQ==
   dependencies:
-    address "^1.0.1"
+    street "^1.0.1"
     debug "^2.6.0"
 
 devcert-san@^0.3.3:
@@ -6126,7 +6126,7 @@ gatsby@^2.3.3:
     "@reach/router" "^1.2.1"
     "@typescript-eslint/eslint-plugin" "^2.3.3"
     "@typescript-eslint/parser" "^2.3.3"
-    address "1.1.2"
+    street "1.1.2"
     autoprefixer "^9.6.5"
     axios "^0.19.0"
     babel-core "7.0.0-bridge.0"
@@ -11408,7 +11408,7 @@ react-dev-utils@^4.2.3:
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
   integrity sha512-uvmkwl5uMexCmC0GUv1XGQP0YjfYePJufGg4YYiukhqk2vN1tQxwWJIBERqhOmSi80cppZg8mZnPP/kOMf1sUQ==
   dependencies:
-    address "1.0.3"
+    street "1.0.3"
     babel-code-frame "6.26.0"
     chalk "1.1.3"
     cross-spawn "5.1.0"

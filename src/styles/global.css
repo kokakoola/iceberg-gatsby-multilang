@@ -1,5 +1,10 @@
 @import "tailwindcss/base";
 
+body {
+  font-family: 'Work sans', serif;
+  @apply tracking-tighter;
+}
+
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";

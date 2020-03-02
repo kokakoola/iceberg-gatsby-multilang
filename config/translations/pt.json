@@ -13,6 +13,7 @@
     "prev": "Anterior",
     "of": "de",
 
+    "formTitle": "Send us a message",
     "name": "Your name",
     "email": "Email",
     "message": "Message",
@@ -20,8 +21,8 @@
 
     "button": "Botão",
 
-    "aboutProject": "Iceberg Gatsby é um PWA, salve o site em sua homescreen para vê-lo offline.",
-    "seeMorePWA": "Leia mais sobre PWA aqui",
-    "maintainedBy": "Projeto mantido por",
-    "contributeMessage": "Você sempre poderá contribuir com esse projeto no"
+    "company": "Iceberg Gatsby é um PWA, salve o site em sua homescreen para vê-lo offline.",
+    "street": "Leia mais sobre PWA aqui",
+    "address": "Projeto mantido por",
+    "phone": "Você sempre poderá contribuir com esse projeto no"
 }

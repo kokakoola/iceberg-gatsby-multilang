@@ -2,8 +2,8 @@ module.exports = {
     theme: {
         important: true,
         fontFamily: {
-            display: ['Roboto', 'sans-serif'],
-            body: ['Roboto', 'sans-serif'],
+            display: ['Work sans', 'sans-serif'],
+            body: ['Work sans', 'sans-serif'],
         },
         extend: {},
     },

@@ -9,6 +9,7 @@
     "allPosts": "All Posts",
     "toRead": "to read",
 
+    "formTitle": "Saada kiri",
     "name": "Sinu nimi",
     "email": "E-post",
     "message": "Teade",
@@ -19,8 +20,8 @@
 
     "button": "Button",
 
-    "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
-    "seeMorePWA": "See more PWA here",
-    "maintainedBy": "Maintained by",
-    "contributeMessage": "You can always contribute with the project on"
+    "company": "Hansa Assets OÜ",
+    "street": "Pronksi 19",
+    "address": "10124 Tallinn",
+    "phone": "+372 504 7987"
 }

@@ -36,33 +36,32 @@ export default class Index extends React.Component {
             .catch(error => alert(error))
     }
 
+
     render() {
-        const { name, email } = props
+        const { name, email, message, send } = this.props
         return (
             <>
-                <div className="w-full z-30 py-6">
-                    <h1>{this.name}</h1>
-                    <form
-                        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-                        name="contact"
-                        method="post"
-                        action="/thanks/"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        onSubmit={this.handleSubmit}
-                    >
-                        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                        <input type="hidden" name="form-name" value="contact" />
-                        <div hidden>
-                            <label>
-                                Don’t fill this out:{' '}
-                                <input
-                                    name="bot-field"
-                                    onChange={this.handleChange}
-                                />
-                            </label>
-                        </div>
-                        <div className="mb-4">
+                <form
+                    name="contact"
+                    method="post"
+                    action="/thanks/"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    onSubmit={this.handleSubmit}
+                >
+                    {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div hidden>
+                        <label>
+                            Don’t fill this out:{' '}
+                            <input
+                                name="bot-field"
+                                onChange={this.handleChange}
+                            />
+                        </label>
+                    </div>
+                    <div className="sm:flex mb-4">
+                        <div className="w-full sm:w-1/2">
                             <label
                                 className="block text-gray-700 text-sm font-bold mb-2"
                                 htmlFor={'name'}
@@ -80,13 +79,16 @@ export default class Index extends React.Component {
                                 />
                             </div>
                         </div>
-                        <div className="field">
-                            <label className="label" htmlFor={'email'}>
+                        <div className="sm:ml-4 w-full sm:w-1/2">
+                            <label
+                                className="block text-gray-700 text-sm font-bold mb-2"
+                                htmlFor={'email'}
+                            >
                                 {email}
                             </label>
                             <div className="control">
                                 <input
-                                    className="input"
+                                    className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
                                     type={'email'}
                                     name={'email'}
                                     onChange={this.handleChange}
@@ -95,30 +97,33 @@ export default class Index extends React.Component {
                                 />
                             </div>
                         </div>
-                        <div className="field">
-                            <label className="label" htmlFor={'message'}>
-                                MESSAGE
-                            </label>
-                            <div className="control">
-                                <textarea
-                                    className="textarea"
-                                    name={'message'}
-                                    onChange={this.handleChange}
-                                    id={'message'}
-                                    required={true}
-                                />
-                            </div>
+                    </div>
+                    <div className="mb-4">
+                        <label
+                            className="block text-gray-700 text-sm font-bold mb-2"
+                            htmlFor={'message'}
+                        >
+                            {message}
+                        </label>
+                        <div className="control">
+                            <textarea
+                                className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                                name={'message'}
+                                onChange={this.handleChange}
+                                id={'message'}
+                                required={true}
+                            />
                         </div>
-                        <div className="field">
-                            <button
-                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                                type="submit"
-                            >
-                                SEND
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div className="mb-4">
+                        <button
+                            className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="submit"
+                        >
+                            {send}
+                        </button>
+                    </div>
+                </form>
             </>
         )
     }
